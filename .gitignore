@@ -1,0 +1,44 @@
+﻿# Node / React / Vite
+node_modules/
+/frontend/dist/
+/frontend/.npm
+*.log
+.env
+.env.*
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/frontend/.DS_Store
+/frontend/coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environment
+/backend/venv/
+/backend/.venv/
+/backend/ENV/
+/backend/env/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+
+# Build artifacts
+/build/
+/dist/ # General dist besides frontend
+
+# Other
+*.bak
+*.tmp

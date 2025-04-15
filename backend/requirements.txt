@@ -1,0 +1,9 @@
+﻿fastapi
+uvicorn[standard]
+pydantic
+requests
+beautifulsoup4
+# Add other dependencies here as needed (e.g., database drivers, ML libraries)
+# psycopg2-binary  # Example for PostgreSQL
+# tensorflow or torch # Example for AI
+# opencv-python    # Example for image processing
