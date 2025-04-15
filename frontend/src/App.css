@@ -1,24 +1,56 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* frontend/src/App.css */
+
+.App {
+  /* Potser vols definir una font general, etc. */
+  font-family: sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 15px 20px;
+  color: white;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-header h1 {
+  margin: 0;
+  font-size: 1.8em;
 }
 
-@keyframes logo-spin {
+/* Contenidor principal amb Flexbox per a les columnes */
+.main-content {
+  display: flex;
+  flex-wrap: wrap; /* Permet que les columnes es posin una sota l'altra en pantalles petites si cal */
+  gap: 20px; /* Espai entre columnes */
+  padding: 0 20px; /* Padding lateral */
+  max-width: 1400px; /* Amplada màxima opcional */
+  margin: 0 auto; /* Centrar el contingut */
+}
+
+/* Columna de la llista de sets */
+.set-list-column {
+  flex: 1; /* Permet que creixi */
+  min-width: 350px; /* Amplada mínima */
+  max-width: 500px; /* Amplada màxima opcional */
+  border-right: 1px solid #eee; /* Separador opcional */
+  padding-right: 20px; /* Espai abans del separador */
+}
+
+/* Columna de la llista de cartes */
+.card-list-column {
+  flex: 2; /* Permet que creixi més que la llista de sets */
+  min-width: 400px; /* Amplada mínima */
+}
+
+/* Estil per a la llista dins de SetList (scroll) */
+.set-list-container ul {
+  max-height: calc(100vh - 150px); /* Calcula alçada màxima restant (ajusta 150px segons header/footer) */
+  overflow-y: auto; /* Mostra scroll vertical si cal */
+  padding-right: 10px; /* Espai per la barra de scroll */
+}
+
+/* Pots afegir més estils per a les cartes, etc. */@keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }

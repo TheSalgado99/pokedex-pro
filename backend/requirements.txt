@@ -7,3 +7,13 @@ beautifulsoup4
 # psycopg2-binary  # Example for PostgreSQL
 # tensorflow or torch # Example for AI
 # opencv-python    # Example for image processing
+fastapi
+uvicorn[standard]
+pydantic
+requests
+beautifulsoup4
+# --- Noves llibreries per a la Base de Dades ---
+sqlmodel
+asyncpg # Driver asíncron per PostgreSQL, ideal per FastAPI
+psycopg2-binary # Driver síncron (de vegades útil tenir-lo, encara que farem servir asyncpg principalment)
+python-dotenv # Per gestionar variables d'entorn (com la contrasenya de la BD)
